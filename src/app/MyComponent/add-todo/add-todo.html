@@ -1,0 +1,24 @@
+<div>
+<h5>Your To-Do</h5>
+    <form (ngSubmit)="onSubmit()">
+      
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" [(ngModel)]="title" name="title" class="form-control" id="todo-title" aria-describedby="taskHelp">
+        <div id="taskHelp" class="form-text">Add you title for tasks list</div>
+      </div>
+      <div class="mb-3">
+        <label for="task-desc" class="form-label">Task Description</label>
+        <input class="form-control" id="task-desc" [(ngModel)]="desc" name="desc">
+      </div>
+      
+      <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <select class="form-select" id="category" [(ngModel)]="category" name="category">
+          <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+        </select>
+      </div>
+      
+    <button type="submit" class="btn btn-sm btn-primary">Add ToDo</button>
+  </form>
+  </div>

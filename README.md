@@ -1,59 +1,165 @@
-# CwhTodoList
+# Angular Todo List
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+A modern, full-stack todo list application built with Angular 20 and Node.js. This project features a clean, responsive UI with Bootstrap and a robust backend API with MongoDB integration.
 
-## Development server
+## Features
 
-To start a local development server, run:
+-  **Create, Read, Update, Delete** todos
+- **Category Management** (Work, Personal, Study, Today, This Week)
+- **Toggle completion status** 
+- **Responsive design** with Bootstrap 5
+- **Real-time updates**
+- **MongoDB persistence**
+- **Modern UI/UX** with clean styling
+- **Angular Router** for navigation
 
-```bash
-ng serve
+## Tech Stack
+
+### Frontend
+- **Angular 20** - Modern web framework
+- **TypeScript** - Type-safe JavaScript
+- **Bootstrap 5** - Responsive CSS framework
+- **Angular Router** - Client-side routing
+
+### Backend
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **MongoDB** - NoSQL database
+- **Mongoose** - MongoDB object modeling
+
+## Quick Start
+
+### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB (local installation or cloud instance)
+- Angular CLI
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/angular-todo-list.git
+   cd angular-todo-list
+   ```
+
+2. **Install frontend dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Install backend dependencies**
+   ```bash
+   cd backend
+   npm install
+   cd ..
+   ```
+
+4. **Set up environment variables**
+   ```bash
+   cd backend
+   cp .env.example .env
+   # Edit .env with your MongoDB connection string
+   ```
+
+5. **Start the backend server**
+   ```bash
+   cd backend
+   npm start
+   # Server runs on http://localhost:3000
+   ```
+
+6. **Start the Angular development server**
+   ```bash
+   ng serve
+   # Application runs on http://localhost:4200
+   ```
+
+## Project Structure
+
+```
+angular-todo-list/
+├── src/
+│   ├── app/
+│   │   ├── MyComponent/
+│   │   │   ├── about/          # About page component
+│   │   │   ├── add-todo/       # Add todo component
+│   │   │   ├── to-dos/         # Todo list component
+│   │   │   └── todo-item/      # Individual todo item
+│   │   ├── services/
+│   │   │   └── todo.service.ts # Todo service for API calls
+│   │   └── ...
+│   └── ...
+├── backend/
+│   ├── server.js              # Express server
+│   ├── package.json           # Backend dependencies
+│   └── ...
+└── ...
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🔧 API Endpoints
 
-## Code scaffolding
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/todos` | Get all todos |
+| POST | `/api/todos` | Create a new todo |
+| PUT | `/api/todos/:id` | Update a todo |
+| DELETE | `/api/todos/:id` | Delete a todo |
+| PATCH | `/api/todos/:id/toggle` | Toggle todo completion |
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📱 Screenshots
 
+*Add screenshots of your application here*
+
+## 🧪 Development
+
+### Running Tests
 ```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+# Run unit tests
 ng test
+
+# Run backend tests (if implemented)
+cd backend && npm test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+### Building for Production
 ```bash
-ng e2e
+# Build frontend
+ng build
+
+# The build artifacts will be stored in the `dist/` directory
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🌐 Environment Variables
 
-## Additional Resources
+Create a `.env` file in the backend directory:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```env
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/todolist
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Angular CLI](https://github.com/angular/angular-cli)
+- UI components from [Bootstrap](https://getbootstrap.com/)
+- Icons from [Bootstrap Icons](https://icons.getbootstrap.com/)
+
+## 📞 Contact
+
+Your Name - your.email@example.com
+
+Project Link: [https://github.com/yourusername/angular-todo-list](https://github.com/yourusername/angular-todo-list)

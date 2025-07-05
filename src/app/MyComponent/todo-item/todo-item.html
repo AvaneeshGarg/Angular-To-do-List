@@ -1,0 +1,36 @@
+<div class = "my-3">
+    <div class="card" 
+         [style.background-color]="!todo.active ? '#f8f9fa' : '#ffffff'"
+         [style.border-left]="!todo.active ? '5px solid #28a745' : '5px solid #fff0d4'"
+         [style.opacity]="!todo.active ? '0.85' : '1'"
+         [style.box-shadow]="!todo.active ? '0 2px 4px rgba(0,0,0,0.1)' : '0 2px 8px rgba(0,123,255,0.15)'"
+         style="width: 18rem; transition: all 0.3s ease;">
+  <div class="card-body" 
+       [style.background-color]="!todo.active ? '#e8f5e8' : '#ffffea'">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h5 [ngClass]="{'strike': !todo.active}" 
+          [style.color]="!todo.active ? '#6c757d' : '#212529'"
+          class="card-title mb-0">{{todo.title}}</h5>
+      <span class="badge" 
+            [style.background-color]="!todo.active ? '#28a745' : '#6c757d'"
+            [style.color]="'white'">{{todo.category}}</span>
+    </div>
+    <p [ngClass]="{'strike': !todo.active}" 
+       [style.color]="!todo.active ? '#6c757d' : '#495057'"
+       class="card-text">{{todo.desc}}</p>
+    
+    <div class="form-check mb-2">
+      <input type="checkbox" class="form-check-input" id="todo{{i}}" [checked]="!todo.active" (click)="onCheckClick(todo)">
+      <label class="form-check-label" 
+             [style.color]="!todo.active ? '#6c757d' : '#495057'"
+             for="todo{{i}}">
+        {{!todo.active ? 'Completed ✓' : 'Mark as done'}}
+      </label>
+    </div>
+
+    <div>
+        <button class="btn btn-sm btn-danger" (click)="OnClick()">Delete</button>
+    </div>
+  </div>
+</div>
+</div>

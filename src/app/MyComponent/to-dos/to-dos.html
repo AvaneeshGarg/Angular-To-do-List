@@ -1,0 +1,27 @@
+
+<div class="my-3">
+    <app-add-todo (todoAdd)="addToDo($event)" ></app-add-todo>
+    
+    <!-- Category Filter -->
+    <div class="mb-3">
+      <label for="categoryFilter" class="form-label">Filter by Category:</label>
+      <select class="form-select" id="categoryFilter" [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+        <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+      </select>
+    </div>
+    
+    <div *ngIf="this.filteredTodos.length==0; else elseBlock">
+      <div class="alert alert-info text-center">
+        <h5>No todos to display</h5>
+        <p *ngIf="selectedCategory !== 'All'">No todos in "{{selectedCategory}}" category.</p>
+      </div>
+    </div>
+    
+    <ng-template #elseBlock>
+      <div class="row">
+        <div class="col-md-4" *ngFor="let todo of filteredTodos; let i = index">
+          <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteToDo($event)" (todoCheckBox)="toggleCheck($event)"></app-todo-item> 
+        </div>
+      </div>
+    </ng-template>
+</div>
