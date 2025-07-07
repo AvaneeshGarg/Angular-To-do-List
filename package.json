@@ -2,17 +2,17 @@
   "name": "angular-todo-list",
   "version": "1.0.0",
   "description": "A modern, full-stack todo list application built with Angular 20 and Node.js",
-  "author": "Your Name <your.email@example.com>",
+  "author": "Avaneesh Garg <Avaneesh.Garg@Coforge.com>",
   "license": "MIT",
   "keywords": ["angular", "todo", "nodejs", "mongodb", "typescript", "bootstrap"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/angular-todo-list.git"
+    "url": "https://github.com/AvaneeshGarg/angular-todo-list.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/angular-todo-list/issues"
+    "url": "https://github.com/AvaneeshGarg/angular-todo-list/issues"
   },
-  "homepage": "https://github.com/yourusername/angular-todo-list#readme",
+  "homepage": "https://github.com/AvaneeshGarg/angular-todo-list#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
