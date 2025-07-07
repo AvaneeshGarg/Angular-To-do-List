@@ -96,7 +96,7 @@ angular-todo-list/
 └── ...
 ```
 
-## 🔧 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -106,11 +106,11 @@ angular-todo-list/
 | DELETE | `/api/todos/:id` | Delete a todo |
 | PATCH | `/api/todos/:id/toggle` | Toggle todo completion |
 
-## 📱 Screenshots
+##  Screenshots
 
-*Add screenshots of your application here*
 
-## 🧪 Development
+
+##  Development
 
 ### Running Tests
 ```bash
@@ -129,7 +129,7 @@ ng build
 # The build artifacts will be stored in the `dist/` directory
 ```
 
-## 🌐 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the backend directory:
 
@@ -138,9 +138,6 @@ PORT=3000
 MONGODB_URI=mongodb://localhost:27017/todolist
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -148,18 +145,17 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Angular CLI](https://github.com/angular/angular-cli)
 - UI components from [Bootstrap](https://getbootstrap.com/)
 - Icons from [Bootstrap Icons](https://icons.getbootstrap.com/)
 
-## 📞 Contact
+## Contact
 
-Avaneesh Garg - Avaneesh.Garg@Coforge.com
 
 Project Link: [https://github.com/AvaneeshGarg/Angular-To-do-List](https://github.com/AvaneeshGarg/Angular-To-do-List)
