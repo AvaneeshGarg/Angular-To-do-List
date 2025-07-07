@@ -7,12 +7,12 @@
   "keywords": ["angular", "todo", "nodejs", "mongodb", "typescript", "bootstrap"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/AvaneeshGarg/angular-todo-list.git"
+    "url": "https://github.com/AvaneeshGarg/Angular-To-do-List.git"
   },
   "bugs": {
-    "url": "https://github.com/AvaneeshGarg/angular-todo-list/issues"
+    "url": "https://github.com/AvaneeshGarg/Angular-To-do-List/issues"
   },
-  "homepage": "https://github.com/AvaneeshGarg/angular-todo-list#readme",
+  "homepage": "https://github.com/AvaneeshGarg/Angular-To-do-List#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

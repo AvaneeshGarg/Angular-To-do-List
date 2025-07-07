@@ -38,8 +38,8 @@ A modern, full-stack todo list application built with Angular 20 and Node.js. Th
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/AvaneeshGarg/angular-todo-list.git
-   cd angular-todo-list
+   git clone https://github.com/AvaneeshGarg/Angular-To-do-List.git
+   cd Angular-To-do-List
    ```
 
 2. **Install frontend dependencies**
@@ -162,4 +162,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Avaneesh Garg - Avaneesh.Garg@Coforge.com
 
-Project Link: [https://github.com/AvaneeshGarg/angular-todo-list](https://github.com/AvaneeshGarg/angular-todo-list)
+Project Link: [https://github.com/AvaneeshGarg/Angular-To-do-List](https://github.com/AvaneeshGarg/Angular-To-do-List)
